@@ -1,0 +1,8 @@
+[33m Run successfully with command - ts2vec_pp - python -u tools/train.py ETTh1 forecast_univar --loader forecast_csv_univar --repr-dims 320 --train_model_name latest.pdparams  --epochs=200  !  [0m
+[33m Run successfully with command - ts2vec_pp - python -u tools/eval.py ETTh1 forecast_univar --loader forecast_csv_univar --repr-dims 320 --eval!  [0m
+[33m Run successfully with command - ts2vec_pp - python -u tools/train.py ETTm1 forecast_univar --loader forecast_csv_univar --repr-dims 320 --train_model_name ETTm1.pdparams  --epochs=200  !  [0m
+[33m Run successfully with command - ts2vec_pp - python -u tools/eval.py ETTm1 forecast_univar --loader forecast_csv_univar --repr-dims 320 --eval --pretrained ./output/ETTm1.pdparams!  [0m
+[33m Run successfully with command - ts2vec_pp - python -u tools/train.py ETTm1 forecast_univar --loader forecast_csv_univar --repr-dims 320 --train_model_name ETTm1.pdparams  --epochs=200  !  [0m
+[33m Run successfully with command - ts2vec_pp - python -u tools/eval.py ETTm1 forecast_univar --loader forecast_csv_univar --repr-dims 320 --eval --pretrained ./output/ETTm1.pdparams!  [0m
+[33m Run successfully with command - ts2vec_pp - python -u tools/train.py ETTm1  --loader forecast_csv --repr-dims 320 --train_model_name ETTm1.pdparams  --epochs=200  !  [0m
+[33m Run successfully with command - ts2vec_pp - python -u tools/eval.py ETTm1  --loader forecast_csv --repr-dims 320 --eval --pretrained ./output/ETTm1.pdparams!  [0m

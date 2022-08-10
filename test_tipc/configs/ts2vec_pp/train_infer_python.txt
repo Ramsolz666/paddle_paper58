@@ -1,0 +1,34 @@
+===========================train_params===========================
+model_name:ts2vec_pp
+python:python
+gpu_list:0
+use-gpu:False
+--epochs:lite_train_lite_infer=5|whole_train_whole_infer=200
+--output-dir:./output/
+--batch-size:lite_train_lite_infer=4|whole_train_whole_infer=8
+--pretrained:null
+train_model_name:latest.pdparams
+--data-path:
+##
+trainer:norm_train
+norm_train:-u tools/train.py ETTm1  --loader forecast_csv --repr-dims 320 --train_model_name ETTm1.pdparams
+##
+===========================eval_params===========================
+eval:-u tools/eval.py ETTm1  --loader forecast_csv --repr-dims 320 --eval --pretrained ./output/ETTm1.pdparams
+##
+===========================infer_params===========================
+--save-inference-dir:null
+--pretrained:null
+norm_export:null
+##
+train_model:null
+infer_export:
+##
+inference:null
+--use-gpu:
+--batch-size:
+--model-dir:
+--img-path:
+--benchmark:
+
+
