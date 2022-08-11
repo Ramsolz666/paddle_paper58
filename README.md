@@ -12,12 +12,9 @@
     - [4.1 模型训练]()
     - [4.2 模型评估]()
     - [4.3 模型预测]()
-- [5. 模型推理部署]()
-    - [5.1 基于Inference的推理]()
-    - [5.2 基于Serving的服务化部署]()
-- [6. 自动化测试脚本]()
-- [7. LICENSE]()
-- [8. 参考链接与文献]()
+- [5. 自动化测试脚本]()
+- [6. LICENSE]()
+- [7. 参考链接与文献]()
 
 
 **注意：**
@@ -107,15 +104,14 @@ ETTm1:
 python -u tools/eval.py ETTm1 forecast_univar --loader forecast_csv_univar --repr-dims 320 --train_model_name latest.pdparams  --epochs=200
 ```
 
+## 5. 自动化测试脚本
+
+参考[test_tipc](./test_tipc/readme.md)
 
 
-## 6. 自动化测试脚本
-
-参考
-
-
-## 7. LICENSE
+## 6. LICENSE
 
 本项目的发布受[Apache 2.0 license](./LICENSE)许可认证。
 
-## 8. 参考链接与文献
+## 7. 参考链接与文献
+
