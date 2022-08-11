@@ -17,23 +17,22 @@
 - [7. 参考链接与文献]()
 
 
-**注意：**
-
-(1) 目录可以使用[gh-md-toc](https://github.com/ekalinin/github-markdown-toc)生成；
-
-(2) 示例repo和文档可以参考：[AlexNet_paddle](https://github.com/littletomatodonkey/AlexNet-Prod/blob/tipc/pipeline/Step5/AlexNet_paddle/README.md)。
 
 ## 1. 简介
-
-
 
 **论文:** [TS2Vec: Towards Universal Representation of Time Series](https://arxiv.org/abs/2106.10466)
 
 **参考repo:** https://github.com/yuezhihan/ts2vec
 
-在此非常感谢`yuezhihan`等人贡献的[Ts2Vec](https://github.com/yuezhihan/ts2vec)，提高了本repo复现论文的效率。
+![image-20220811215446312](./imgs/1.png)
 
-**aistudio体验教程:** [地址](url)
+论文结构如上图所示，TS2Vec执行对比分析在增强的上下文视图上以分层方式学习，这使得能够针对每个对象进行鲁棒的上下文表示时间戳。
+
+从一个in序列中随机抽取两个重叠的子序列-把时间序列放在xi身上，鼓励语境的一致性公共段上的表示。原始输入被馈送输入到编码器中，该编码器与时间对比度损失和实例对比度损失。总数损失在分层框架中的多个尺度上求和工作 ，实验表明，这种结构模型能得到显著的优越特性。
+
+最后在此非常感谢`yuezhihan`等人贡献的[Ts2Vec](https://github.com/yuezhihan/ts2vec)，提高了本repo复现论文的效率。
+
+**aistudio体验教程:** [地址](https://aistudio.baidu.com/aistudio/projectdetail/4413830)
 
 
 ## 2. 数据集和复现精度
