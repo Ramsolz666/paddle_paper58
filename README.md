@@ -114,3 +114,10 @@ python -u tools/eval.py ETTm1 forecast_univar --loader forecast_csv_univar --rep
 
 ## 7. 参考链接与文献
 
+**论文:** [TS2Vec: Towards Universal Representation of Time Series](https://arxiv.org/abs/2106.10466)
+
+**参考repo:** https://github.com/yuezhihan/ts2vec
+
+再次衷心的致谢百度飞桨给予我这次宝贵的经验，以及原作者repo的精巧编写。
+
+不胜感激！
